@@ -17,7 +17,6 @@ export default class SlideShow extends React.Component {
                     <div><img src='../../img/img1.jpg'/></div>
                     <div><img src='../../img/img2.jpg'/></div>
                     <div><img src='../../img/img3.jpg'/></div>
-                    <div><img src='../../img/img4.jpg'/></div>
                 </Slider>
 
             </div>
