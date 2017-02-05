@@ -7,7 +7,7 @@ export default class Header extends React.Component {
                 <div class="col-lg-12">
                     <div class="bs-component">
                         <div class="jumbotron">
-                            <h1>Jumbotron</h1>
+                            <h1>{this.props.title}</h1>
                             <p>This is a simple hero unit, a simple jumbotron-style component for calling extra
                                 attention to
                                 featured content or information.</p>
