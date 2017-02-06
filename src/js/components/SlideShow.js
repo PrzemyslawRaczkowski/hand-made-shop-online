@@ -1,4 +1,5 @@
 import React from 'react';
+
 var Slider = require('react-slick');
 
 export default class SlideShow extends React.Component {
@@ -12,13 +13,10 @@ export default class SlideShow extends React.Component {
             slidesToScroll: 1
         };
         return (
-            <div>
+            <div class="slide-show">
                 <Slider {...settings}>
-                    <div><img src='../../img/img1.jpg'/></div>
-                    <div><img src='../../img/img2.jpg'/></div>
-                    <div><img src='../../img/img3.jpg'/></div>
+                    <div><img src='../../img/img1.png'/></div>
                 </Slider>
-
             </div>
         );
     }
