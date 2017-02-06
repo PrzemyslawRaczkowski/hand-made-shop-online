@@ -6,16 +6,20 @@ export default class SlideShow extends React.Component {
     render() {
         const settings = {
             dots: true,
-            fade: true,
             infinite: true,
-            speed: 500,
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 4000
         };
         return (
             <div class="slide-show">
                 <Slider {...settings}>
-                    <div><img src='../../img/img1.png'/></div>
+                    <div><img src='../../img/logo.png'/></div>
+                    <div><img src='../../img/img1.jpg'/></div>
+                    <div><img src='../../img/img2.jpg'/></div>
+                    <div><img src='../../img/img3.jpg'/></div>
+
                 </Slider>
             </div>
         );
