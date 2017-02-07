@@ -1,6 +1,6 @@
 import React from 'react';
 
-var Slider = require('react-slick');
+import Slider from '../../../node_modules/react-slick';
 
 export default class SlideShow extends React.Component {
     render() {
