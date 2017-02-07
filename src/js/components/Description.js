@@ -5,7 +5,7 @@ export default class Description extends React.Component {
         return (
             <div class="bs-component">
                 <div class="bs-component">
-                    <h2>Example body text</h2>
+                    <h2>{this.props.title}</h2>
                     <p>
                         Nullam quis risus eget vel eu leo. Cum sociis natoque penatibuset magnis dis parturient
                         montes,

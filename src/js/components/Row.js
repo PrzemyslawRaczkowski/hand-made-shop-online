@@ -8,7 +8,7 @@ export default class Row extends React.Component {
         return (
             <div class="row">
                 <NavBar/>
-                <Description/>
+                <Description title={this.props.title}/>
             </div>
         );
     }
