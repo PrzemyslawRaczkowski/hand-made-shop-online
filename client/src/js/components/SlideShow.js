@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Slider from '../../../node_modules/react-slick';
+import Slider from '../../../../node_modules/react-slick';
 
 export default class SlideShow extends React.Component {
     render() {
@@ -15,10 +15,10 @@ export default class SlideShow extends React.Component {
         return (
             <div class="slide-show">
                 <Slider {...settings}>
-                    <div><img src='../../img/logo.png'/></div>
-                    <div><img src='../../img/img1.jpg'/></div>
-                    <div><img src='../../img/img2.jpg'/></div>
-                    <div><img src='../../img/img3.jpg'/></div>
+                    <div><img src='../../../public/img/logo.png'/></div>
+                    <div><img src='../../../public/img/img1.jpg'/></div>
+                    <div><img src='../../../public/img/img2.jpg'/></div>
+                    <div><img src='../../../public/img/img3.jpg'/></div>
 
                 </Slider>
             </div>
