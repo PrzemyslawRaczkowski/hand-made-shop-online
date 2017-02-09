@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --content-base ./public --inline --hot"
+    "dev": "webpack-dev-server --content-base ./public --inline --hot",
+    "server": "node server/src/server.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
     "express": "^4.14.1",
     "history": "^4.5.1",
     "http": "0.0.0",
+    "mongoose": "^4.8.1",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
     "react-dom": "^15.4.2",
