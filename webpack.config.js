@@ -1,6 +1,6 @@
 var debug = process.env.NODE_ENV !== "production";
 var webpack = require('webpack');
-var path = require('path');
+const path = require( 'path' );
 
 module.exports = {
     devtool: debug ? "inline-sourcemap" : null,
@@ -13,19 +13,19 @@ module.exports = {
                 exclude: /(node_modules|bower_components)/,
                 query: {
                     presets: ['react', 'es2015', 'stage-0'],
-                    plugins: ['react-html-attrs', 'transform-class-properties', 'transform-decorators-legacy'],
+                    plugins: ['react-html-attrs', 'transform-class-properties', 'transform-decorators-legacy']
                 }
             }
         ]
     },
     output: {
-        path: __dirname + "/public/build/",
-        publicPath: "/public/build/",
-        filename: "bundle.min.js"
+        path: path.join( __dirname, "public","build" ),
+        filename: "bundle.min.js",
+        publicPath:  path.join( __dirname, "public" ),
     },
     plugins: debug ? [] : [
         new webpack.optimize.DedupePlugin(),
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.optimize.UglifyJsPlugin({mangle: false, sourcemap: false}),
-    ],
+    ]
 };

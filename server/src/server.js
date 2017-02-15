@@ -5,12 +5,10 @@ var app = express();
 var port = process.env.PORT || 5050;
 
 
-
-
-app.use(express.static(path.join('C:/Repositories/hand-made-shop-online/public')));
+app.use(express.static(path.join(process.cwd(), 'public')));
 
 app.get('/', function (request, response) {
-    response.sendFile('C:/Repositories/hand-made-shop-online/public/index.html')
+    response.sendFile(path.join(process.cwd(), 'public', 'index.html'));
 });
 
 app.listen(port, err => {
