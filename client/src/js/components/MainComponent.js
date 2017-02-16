@@ -9,7 +9,7 @@ export default class MainComponent extends React.Component {
         return (
             <div>
                 <Header/>
-                <Row title={this.props.children}/>
+                <Row title={this.props.title}/>
                 <Footer/>
             </div>
         );
