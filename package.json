@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --content-base ./public --inline --hot",
-    "server": "node server/src/server.js"
+    "server": "node server/src/server.js",
+    "start": "webpack && node server/src/server.js"
   },
   "repository": {
     "type": "git",

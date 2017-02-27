@@ -12,11 +12,11 @@ import Shop from './pages/Shop'
 
 const app = document.getElementById('app');
 ReactDOM.render(<Router history={hashHistory}>
-    <Route path="/" component={Home}> </Route>
-    <Route path="about" name="archives" component={About}></Route>
-    <Route path="blog" name="settings" component={Blog}></Route>
-    <Route path="contacts" name="settings" component={Contacts}></Route>
-    <Route path="faq" name="settings" component={Faq}></Route>
-    <Route path="gallery" name="settings" component={Gallery}></Route>
-    <Route path="shop" name="settings" component={Shop}></Route>
+    <Route path="/" component={Home}/>
+    <Route path="about" name="archives" component={About}/>
+    <Route path="blog" name="settings" component={Blog}/>
+    <Route path="contacts" name="settings" component={Contacts}/>
+    <Route path="faq" name="settings" component={Faq}/>
+    <Route path="gallery" name="settings" component={Gallery}/>
+    <Route path="shop" name="settings" component={Shop}/>
 </Router>, app);
