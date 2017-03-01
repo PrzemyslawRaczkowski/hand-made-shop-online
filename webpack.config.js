@@ -1,6 +1,7 @@
 var debug = process.env.NODE_ENV !== "production";
 var webpack = require('webpack');
 const path = require( 'path' );
+const CleanWebpackPlugin = require( 'clean-webpack-plugin' );
 
 module.exports = {
     devtool: debug ? "inline-sourcemap" : null,
@@ -24,6 +25,9 @@ module.exports = {
         publicPath:  path.join( __dirname, "public" ),
     },
     plugins: debug ? [] : [
+        new CleanWebpackPlugin( [ 'public/build' ], {
+            root: process.cwd(),
+        }),
         new webpack.optimize.DedupePlugin(),
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.optimize.UglifyJsPlugin({mangle: false, sourcemap: false}),
