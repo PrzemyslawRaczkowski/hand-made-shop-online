@@ -1,7 +1,7 @@
 import React from 'react';
 
 import MainComponent from '../components/MainComponent';
-import { loadContactTitle } from '../actions';
+import { loadContactTitle } from '../actions/actions';
 import { connect } from 'react-redux';
 
 class Contacts extends React.Component {

@@ -10,7 +10,7 @@ const port = process.env.PORT || 5050;
 app.use(express.static(path.join(process.cwd(), 'public')));
 
 app.get('/api/contact-title', (request, response) => {
-    response.json({ title: 'contact2'});
+    response.json({title: 'contact2'});
 });
 
 app.get('*', function (request, response) {

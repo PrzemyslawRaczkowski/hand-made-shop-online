@@ -11,23 +11,22 @@ import Home from './pages/Home'
 import Shop from './pages/Shop'
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
-import reducer from './reducer';
+import reducer from './reducers/reducer';
 import promiseMiddleware from 'redux-promise';
 
 const app = document.getElementById('app');
 
-const store = createStore( reducer, {}, applyMiddleware( promiseMiddleware ) );
+const store = createStore(reducer, {}, applyMiddleware(promiseMiddleware));
 
 ReactDOM.render(
     <Provider store={store}>
         <Router history={browserHistory}>
             <Route path="/" component={Home}/>
-            <Route path="about" name="archives" component={About}/>
-            <Route path="blog" name="settings" component={Blog}/>
-            <Route path="contacts" name="settings" component={Contacts}/>
-            <Route path="faq" name="settings" component={Faq}/>
-            <Route path="gallery" name="settings" component={Gallery}/>
-            <Route path="shop" name="settings" component={Shop}/>
+            <Route path="about" name="about" component={About}/>
+            <Route path="blog" name="blog" component={Blog}/>
+            <Route path="contacts" name="contacts" component={Contacts}/>
+            <Route path="faq" name="faq" component={Faq}/>
+            <Route path="gallery" name="gallery" component={Gallery}/>
+            <Route path="shop" name="shop" component={Shop}/>
         </Router>
-    </Provider>
-, app);
+    </Provider>, app);
