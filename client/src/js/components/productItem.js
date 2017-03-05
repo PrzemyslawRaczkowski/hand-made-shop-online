@@ -1,6 +1,6 @@
 import react from 'react';
 
-export default class ProductItem extends React.component {
+export default class ProductItem extends React.Component {
     render() {
         return (
             <div class="col-sm-4 col-lg-4 col-md-4">
