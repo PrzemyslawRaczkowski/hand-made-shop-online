@@ -1,12 +1,12 @@
 import React from 'react';
 
-import MainComponent from '../components/MainComponent';
+import ProductsList from '../components/ProductsList';
 
 export default class Shop extends React.Component {
     render() {
         return (
             <div>
-                <MainComponent title="Shop"/>
+                <ProductsList/>
             </div>
         );
     }

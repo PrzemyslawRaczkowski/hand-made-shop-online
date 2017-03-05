@@ -1,17 +1,16 @@
 import React from 'react';
 
 import NavBar from './NavBar';
-import Description from './Description';
+import Row from './Row';
+import Header from './Header';
 import ProductItem from './ProductItem';
 
 export default class ProductsList extends React.Component {
     render() {
         return (
             <div>
-                <div class="row">
-                    <NavBar/>
-                    <Description title={this.props.title}/>
-                </div>
+                <Header/>
+                <Row title='Shop'/>
                 <div class="row">
                     <ProductItem/>
                     <ProductItem/>
