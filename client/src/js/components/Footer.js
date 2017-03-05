@@ -6,10 +6,9 @@ export default class Footer extends React.Component {
             <div>
                 <div class="row">
                     <div class="jumbotron">
-                        <h1>Jumbotron</h1>
-                        <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-                            featured content or information.</p>
-                        <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+                        <h1>20% sale!</h1>
+                        <p>20% sale for all products till end of this month!.</p>
+                        <p><a class="btn btn-primary btn-lg">Check</a></p>
                     </div>
                 </div>
                 <div class="row">

@@ -33,7 +33,8 @@
     "react-slick": "^0.14.6",
     "redux": "^3.6.0",
     "redux-actions": "^1.2.2",
-    "redux-promise": "^0.5.3"
+    "redux-promise": "^0.5.3",
+    "smoothscroll": "^0.3.0"
   },
   "devDependencies": {
     "babel-core": "^6.22.1",
