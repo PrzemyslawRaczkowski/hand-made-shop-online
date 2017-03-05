@@ -5,6 +5,7 @@ import Row from './Row';
 import Header from './Header';
 import ProductItem from './ProductItem';
 import Pagination from './Pagination';
+import ProductsNavBar from './ProductsNavBar';
 
 export default class ProductsList extends React.Component {
     render() {
@@ -12,6 +13,7 @@ export default class ProductsList extends React.Component {
             <div>
                 <Header/>
                 <Row title='Shop'/>
+                <ProductsNavBar/>
                 <div class="row">
                     <ProductItem/>
                     <ProductItem/>
