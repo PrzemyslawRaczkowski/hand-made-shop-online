@@ -4,6 +4,7 @@ import NavBar from './NavBar';
 import Row from './Row';
 import Header from './Header';
 import ProductItem from './ProductItem';
+import Pagination from './Pagination';
 
 export default class ProductsList extends React.Component {
     render() {
@@ -21,6 +22,7 @@ export default class ProductsList extends React.Component {
                     <ProductItem/>
                     <ProductItem/>
                 </div>
+                <Pagination/>
             </div>
         );
     }
