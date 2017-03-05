@@ -4,9 +4,9 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 5050;
 
-const DB_URL = 'mongodb://localhost:27017/handmade_shop';
-const mongoose = require('mongoose');
-mongoose.connect(DB_URL);
+//const DB_URL = 'mongodb://localhost:27017/handmade_shop';
+//const mongoose = require('mongoose');
+//mongoose.connect(DB_URL);
 
 app.use(express.static(path.join(process.cwd(), 'public')));
 

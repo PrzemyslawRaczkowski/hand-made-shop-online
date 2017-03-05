@@ -12,6 +12,7 @@ var productSchema = new Schema({
     dimensions: [{
         width: Number,
         height: Number,
+        depth: Number,
         unit: String
     }],
     amount: Number
