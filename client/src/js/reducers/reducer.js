@@ -4,6 +4,9 @@ export default function mainReducer(state, action) {
             return Object.assign({}, state, {
                 contactTitle: action.title
             });
+
+        case 'ADD_PRODUCT':
+
     }
 
     return state;
