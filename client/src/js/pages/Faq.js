@@ -2,7 +2,7 @@ import React from 'react';
 
 import Header from '../components/Header';
 import Row from '../components/Row';
-import AddingProduct from '../components/AddingProduct';
+import AddingProductForm from '../components/AddingProductForm';
 
 export default class Faq extends React.Component {
     render() {
@@ -10,7 +10,7 @@ export default class Faq extends React.Component {
             <div>
                 <Header/>
                 <Row title='Faq'/>
-                <AddingProduct/>
+                <AddingProductForm/>
             </div>
         );
     }
